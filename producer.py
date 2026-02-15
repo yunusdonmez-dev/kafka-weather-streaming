@@ -5,6 +5,9 @@ import os
 from dotenv import load_dotenv               
 from kafka import KafkaProducer
 
+# Load secrets from the .env file
+load_dotenv()
+
 # 1. Configuration
 API_KEY = os.getenv("WEATHER_API_KEY")
 CITY = "Amsterdam"
